@@ -1,0 +1,715 @@
+[0m16:02:53.685228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31de2ca5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31de65d710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31de2c8ed0>]}
+
+
+============================== 16:02:53.690003 | a78e0651-0ba3-464c-9567-d5a5427acde1 ==============================
+[0m16:02:53.690003 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:02:53.690405 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/kate/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:02:53.695302 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:02:53.695536 [info ] [MainThread]: python version: 3.11.9
+[0m16:02:53.695756 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:02:53.695953 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:02:53.696386 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 13
+  ------------------------------
+  10 |       dbname: mimiciv # or database instead of dbname
+  11 |       schema: dbt_kweber
+  12 |       threads: 6
+  13 |       [keepalives_idle](#keepalives_idle): 0 # default 0, indicating the system default. See below
+  14 |       connect_timeout: 10 # default 10 seconds
+  15 |       [retries](#retries): 1  # default 1 retry on error/timeout when opening connections
+  16 |       [search_path](#search_path): [optional, override the default postgres search_path]
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 5, column 7
+  did not find expected key
+    in "<unicode string>", line 13, column 24
+[0m16:02:53.697685 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.015676284, "process_user_time": 0.713, "process_kernel_time": 0.071698, "process_mem_max_rss": "89068", "process_in_blocks": "168", "process_out_blocks": "16", "command_success": false}
+[0m16:02:53.698050 [debug] [MainThread]: Command `dbt debug` failed at 16:02:53.697988 after 0.02 seconds
+[0m16:02:53.698299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31de2d3b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31de2c9510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31e1c373d0>]}
+[0m16:02:53.698529 [debug] [MainThread]: Flushing usage events
+[0m16:03:36.784670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc965e45390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc966555310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc965e45290>]}
+
+
+============================== 16:03:36.787365 | 0ebe7fa9-9451-4b3a-940f-ff0c69a93ab9 ==============================
+[0m16:03:36.787365 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:03:36.787717 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/kate/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:03:36.792540 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:03:36.792777 [info ] [MainThread]: python version: 3.11.9
+[0m16:03:36.792998 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:03:36.793205 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:03:36.793604 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 13
+  ------------------------------
+  10 |       dbname: mimiciv # or database instead of dbname
+  11 |       schema: dbt_kweber
+  12 |       threads: 6
+  13 |         target: prod
+  14 |   outputs:
+  15 |     prod:
+  16 |       type: redshift
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 13, column 15
+[0m16:03:36.794167 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.012602275, "process_user_time": 0.701684, "process_kernel_time": 0.079736, "process_mem_max_rss": "89132", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m16:03:36.794520 [debug] [MainThread]: Command `dbt debug` failed at 16:03:36.794460 after 0.01 seconds
+[0m16:03:36.794757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc965e45950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc965ebee90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc965e45990>]}
+[0m16:03:36.794987 [debug] [MainThread]: Flushing usage events
+[0m16:03:59.104175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b1dbcd790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b1dbd7610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b1db9c1d0>]}
+
+
+============================== 16:03:59.106760 | e1538d99-a986-45b3-843b-12d072692fb9 ==============================
+[0m16:03:59.106760 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:03:59.107132 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kate/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:03:59.113115 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:03:59.113375 [info ] [MainThread]: python version: 3.11.9
+[0m16:03:59.113595 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:03:59.113801 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:03:59.160471 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m16:03:59.160844 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m16:03:59.184553 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:03:59.184818 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:03:59.185031 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:03:59.185262 [info ] [MainThread]: Configuration:
+[0m16:03:59.185457 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m16:03:59.185649 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:03:59.185837 [info ] [MainThread]: Required dependencies:
+[0m16:03:59.186044 [debug] [MainThread]: Executing "git --help"
+[0m16:03:59.188749 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:03:59.189318 [debug] [MainThread]: STDERR: "b''"
+[0m16:03:59.189619 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:03:59.189932 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:03:59.190298 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:03:59.190596 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "jsl-omop", target "prod" invalid: 'None' is not valid under any of the given schemas
+
+
+[0m16:03:59.190896 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kate/projects/dbt-tutorial/dbt_project.yml> not found
+
+[0m16:03:59.191656 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.11647134, "process_user_time": 0.774739, "process_kernel_time": 0.107824, "process_mem_max_rss": "101732", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m16:03:59.192168 [debug] [MainThread]: Command `dbt debug` failed at 16:03:59.192079 after 0.12 seconds
+[0m16:03:59.192550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b1db9ddd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b1dbe6c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b1dbe5ed0>]}
+[0m16:03:59.192941 [debug] [MainThread]: Flushing usage events
+[0m16:04:59.452189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7baacb5510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bab01cf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7baacc4450>]}
+
+
+============================== 16:04:59.454937 | 2a8d7ef0-ce7b-4d23-971c-585dbd17bec2 ==============================
+[0m16:04:59.454937 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:04:59.455307 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/kate/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:04:59.461060 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:04:59.461309 [info ] [MainThread]: python version: 3.11.9
+[0m16:04:59.461529 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:04:59.461731 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:04:59.507987 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m16:04:59.508355 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m16:04:59.531665 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:04:59.531921 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:04:59.532127 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:04:59.532339 [info ] [MainThread]: Configuration:
+[0m16:04:59.532532 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m16:04:59.532727 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:04:59.532921 [info ] [MainThread]: Required dependencies:
+[0m16:04:59.533140 [debug] [MainThread]: Executing "git --help"
+[0m16:04:59.535987 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:04:59.536645 [debug] [MainThread]: STDERR: "b''"
+[0m16:04:59.536952 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:04:59.537281 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:04:59.537656 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:04:59.537956 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "jsl-omop", target "prod" invalid: 'None' is not valid under any of the given schemas
+
+
+[0m16:04:59.538259 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kate/projects/dbt-tutorial/dbt_project.yml> not found
+
+[0m16:04:59.538918 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.115869254, "process_user_time": 0.781556, "process_kernel_time": 0.103675, "process_mem_max_rss": "102132", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m16:04:59.539278 [debug] [MainThread]: Command `dbt debug` failed at 16:04:59.539218 after 0.12 seconds
+[0m16:04:59.539557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7baac81c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7baacc7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7baacc5510>]}
+[0m16:04:59.539823 [debug] [MainThread]: Flushing usage events
+[0m16:05:46.955852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4937935ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4937c95490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4939735a10>]}
+
+
+============================== 16:05:46.958502 | 7fc4d2f9-6a3b-4087-b6cf-810f8e10887a ==============================
+[0m16:05:46.958502 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:05:46.958917 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/kate/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:05:46.964453 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:05:46.964699 [info ] [MainThread]: python version: 3.11.9
+[0m16:05:46.964910 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:05:46.965107 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:05:47.010090 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m16:05:47.010475 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m16:05:47.037304 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:05:47.037584 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:05:47.037781 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:05:47.038058 [info ] [MainThread]: adapter type: redshift
+[0m16:05:47.038252 [info ] [MainThread]: adapter version: 1.8.1
+[0m16:05:47.038446 [info ] [MainThread]: Configuration:
+[0m16:05:47.038630 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:05:47.038816 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:05:47.038997 [info ] [MainThread]: Required dependencies:
+[0m16:05:47.039197 [debug] [MainThread]: Executing "git --help"
+[0m16:05:47.042034 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:05:47.042455 [debug] [MainThread]: STDERR: "b''"
+[0m16:05:47.042701 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:05:47.042938 [info ] [MainThread]: Connection:
+[0m16:05:47.043148 [info ] [MainThread]:   host: hostname.region.redshift.amazonaws.com
+[0m16:05:47.043333 [info ] [MainThread]:   user: dbtadmin
+[0m16:05:47.043514 [info ] [MainThread]:   port: 5439
+[0m16:05:47.043694 [info ] [MainThread]:   database: dbtworkshop
+[0m16:05:47.043877 [info ] [MainThread]:   method: database
+[0m16:05:47.044058 [info ] [MainThread]:   cluster_id: None
+[0m16:05:47.044248 [info ] [MainThread]:   iam_profile: None
+[0m16:05:47.044430 [info ] [MainThread]:   schema: analytics
+[0m16:05:47.044611 [info ] [MainThread]:   sslmode: prefer
+[0m16:05:47.044793 [info ] [MainThread]:   region: None
+[0m16:05:47.044974 [info ] [MainThread]:   sslmode: prefer
+[0m16:05:47.045182 [info ] [MainThread]:   region: None
+[0m16:05:47.045365 [info ] [MainThread]:   iam_profile: None
+[0m16:05:47.045548 [info ] [MainThread]:   autocreate: False
+[0m16:05:47.045732 [info ] [MainThread]:   db_groups: []
+[0m16:05:47.045917 [info ] [MainThread]:   ra3_node: True
+[0m16:05:47.046097 [info ] [MainThread]:   connect_timeout: None
+[0m16:05:47.046278 [info ] [MainThread]:   role: None
+[0m16:05:47.046459 [info ] [MainThread]:   retries: 1
+[0m16:05:47.046638 [info ] [MainThread]:   autocommit: True
+[0m16:05:47.046920 [info ] [MainThread]: Registered adapter: redshift=1.8.1
+[0m16:05:47.050369 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m16:05:47.053805 [debug] [MainThread]: Using redshift connection "debug"
+[0m16:05:47.054020 [debug] [MainThread]: On debug: select 1 as id
+[0m16:05:47.054211 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:05:47.056910 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m16:05:47.057528 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m16:05:47.162560 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m16:05:47.163037 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m16:05:47.163281 [debug] [MainThread]: On debug: No close available on handle
+[0m16:05:47.163514 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:05:47.163792 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:05:47.163987 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kate/projects/dbt-tutorial/dbt_project.yml> not found
+
+[0m16:05:47.164183 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('communication error', gaierror(-5, 'No address associated with hostname'))
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:05:47.164739 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.23766804, "process_user_time": 0.809034, "process_kernel_time": 0.144901, "process_mem_max_rss": "103992", "process_in_blocks": "112", "process_out_blocks": "24", "command_success": false}
+[0m16:05:47.165111 [debug] [MainThread]: Command `dbt debug` failed at 16:05:47.165048 after 0.24 seconds
+[0m16:05:47.165357 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:05:47.165587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f493793b490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49378f5d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4937c95690>]}
+[0m16:05:47.165851 [debug] [MainThread]: Flushing usage events
+[0m16:06:09.148749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfedc57110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfedc57ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfedc59210>]}
+
+
+============================== 16:06:09.151145 | 421cb37a-9da0-4b49-98f0-2612ecd95eac ==============================
+[0m16:06:09.151145 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:06:09.151520 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/kate/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:06:09.157547 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:06:09.157792 [info ] [MainThread]: python version: 3.11.9
+[0m16:06:09.158010 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:06:09.158211 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:06:09.204444 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m16:06:09.204840 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m16:06:09.232368 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:06:09.232649 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:06:09.232850 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:06:09.233192 [info ] [MainThread]: adapter type: redshift
+[0m16:06:09.233393 [info ] [MainThread]: adapter version: 1.8.1
+[0m16:06:09.233592 [info ] [MainThread]: Configuration:
+[0m16:06:09.233779 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:06:09.233965 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:06:09.234149 [info ] [MainThread]: Required dependencies:
+[0m16:06:09.234355 [debug] [MainThread]: Executing "git --help"
+[0m16:06:09.237301 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:06:09.237855 [debug] [MainThread]: STDERR: "b''"
+[0m16:06:09.238156 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:06:09.238470 [info ] [MainThread]: Connection:
+[0m16:06:09.238788 [info ] [MainThread]:   host: dbtredshiftcluster-qjhz6fv2mdya.cghctbp7qxqt.us-east-1.redshift.amazonaws.com
+[0m16:06:09.239089 [info ] [MainThread]:   user: dbtadmin
+[0m16:06:09.239368 [info ] [MainThread]:   port: 5439
+[0m16:06:09.239643 [info ] [MainThread]:   database: dbtworkshop
+[0m16:06:09.239925 [info ] [MainThread]:   method: database
+[0m16:06:09.240202 [info ] [MainThread]:   cluster_id: None
+[0m16:06:09.240479 [info ] [MainThread]:   iam_profile: None
+[0m16:06:09.240755 [info ] [MainThread]:   schema: analytics
+[0m16:06:09.241030 [info ] [MainThread]:   sslmode: prefer
+[0m16:06:09.241321 [info ] [MainThread]:   region: None
+[0m16:06:09.241595 [info ] [MainThread]:   sslmode: prefer
+[0m16:06:09.241873 [info ] [MainThread]:   region: None
+[0m16:06:09.242093 [info ] [MainThread]:   iam_profile: None
+[0m16:06:09.242273 [info ] [MainThread]:   autocreate: False
+[0m16:06:09.242450 [info ] [MainThread]:   db_groups: []
+[0m16:06:09.242625 [info ] [MainThread]:   ra3_node: True
+[0m16:06:09.242800 [info ] [MainThread]:   connect_timeout: None
+[0m16:06:09.242981 [info ] [MainThread]:   role: None
+[0m16:06:09.243157 [info ] [MainThread]:   retries: 1
+[0m16:06:09.243331 [info ] [MainThread]:   autocommit: True
+[0m16:06:09.243627 [info ] [MainThread]: Registered adapter: redshift=1.8.1
+[0m16:06:09.244823 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m16:06:09.248226 [debug] [MainThread]: Using redshift connection "debug"
+[0m16:06:09.248438 [debug] [MainThread]: On debug: select 1 as id
+[0m16:06:09.248631 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:06:09.251458 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m16:06:09.252055 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m16:08:16.377957 [error] [MainThread]: Encountered an error:
+
+[0m16:08:16.380423 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/main.py", line 406, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/debug.py", line 150, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/debug.py", line 471, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/debug.py", line 449, in attempt_connection
+    adapter.debug_query()
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/impl.py", line 186, in debug_query
+    self.execute("select 1 as id")
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/base/impl.py", line 380, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 346, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 372, in add_query
+    connection, cursor = super().add_query(
+                         ^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/sql/connections.py", line 92, in add_query
+    cursor = connection.handle.cursor()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 95, in handle
+    self._handle.resolve(self)
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 119, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 327, in open
+    open_connection = cls.retry_connection(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/base/connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 192, in connect
+    c = redshift_connector.connect(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/redshift_connector/__init__.py", line 376, in connect
+    return Connection(
+           ^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/redshift_connector/core.py", line 628, in __init__
+    self._usock.connect(hostport)
+KeyboardInterrupt
+
+[0m16:08:16.381614 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 127.26165, "process_user_time": 0.828611, "process_kernel_time": 0.099622, "process_mem_max_rss": "103692", "process_out_blocks": "40", "command_success": false, "process_in_blocks": "0"}
+[0m16:08:16.382033 [debug] [MainThread]: Command `dbt debug` failed at 16:08:16.381973 after 127.26 seconds
+[0m16:08:16.382253 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:08:16.382468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfedc11d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfedaf4150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfedc7b610>]}
+[0m16:08:16.382712 [debug] [MainThread]: Flushing usage events
+[0m16:08:21.272695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf8b4cdb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf8b509190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf8b509650>]}
+
+
+============================== 16:08:21.275684 | 5c485f28-57a6-4551-8549-2fb873ca1dfc ==============================
+[0m16:08:21.275684 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:08:21.276223 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/kate/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:08:21.282355 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:08:21.282598 [info ] [MainThread]: python version: 3.11.9
+[0m16:08:21.282811 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:08:21.283023 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:08:21.328270 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m16:08:21.328628 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m16:08:21.355857 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:08:21.356120 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:08:21.356317 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:08:21.356584 [info ] [MainThread]: adapter type: redshift
+[0m16:08:21.356778 [info ] [MainThread]: adapter version: 1.8.1
+[0m16:08:21.356973 [info ] [MainThread]: Configuration:
+[0m16:08:21.357165 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:08:21.357349 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:08:21.357530 [info ] [MainThread]: Required dependencies:
+[0m16:08:21.357729 [debug] [MainThread]: Executing "git --help"
+[0m16:08:21.360528 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:08:21.361094 [debug] [MainThread]: STDERR: "b''"
+[0m16:08:21.361437 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:08:21.361749 [info ] [MainThread]: Connection:
+[0m16:08:21.362064 [info ] [MainThread]:   host: dbtredshiftcluster-qjhz6fv2mdya.cghctbp7qxqt.us-east-1.redshift.amazonaws.com
+[0m16:08:21.362298 [info ] [MainThread]:   user: dbtadmin
+[0m16:08:21.362483 [info ] [MainThread]:   port: 5439
+[0m16:08:21.362665 [info ] [MainThread]:   database: dbtworkshop
+[0m16:08:21.362855 [info ] [MainThread]:   method: database
+[0m16:08:21.363040 [info ] [MainThread]:   cluster_id: None
+[0m16:08:21.363223 [info ] [MainThread]:   iam_profile: None
+[0m16:08:21.363401 [info ] [MainThread]:   schema: analytics
+[0m16:08:21.363588 [info ] [MainThread]:   sslmode: prefer
+[0m16:08:21.363766 [info ] [MainThread]:   region: None
+[0m16:08:21.363942 [info ] [MainThread]:   sslmode: prefer
+[0m16:08:21.364121 [info ] [MainThread]:   region: None
+[0m16:08:21.364298 [info ] [MainThread]:   iam_profile: None
+[0m16:08:21.364478 [info ] [MainThread]:   autocreate: False
+[0m16:08:21.364655 [info ] [MainThread]:   db_groups: []
+[0m16:08:21.364840 [info ] [MainThread]:   ra3_node: False
+[0m16:08:21.365018 [info ] [MainThread]:   connect_timeout: None
+[0m16:08:21.365203 [info ] [MainThread]:   role: None
+[0m16:08:21.365380 [info ] [MainThread]:   retries: 1
+[0m16:08:21.365560 [info ] [MainThread]:   autocommit: True
+[0m16:08:21.365866 [info ] [MainThread]: Registered adapter: redshift=1.8.1
+[0m16:08:21.367043 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m16:08:21.370406 [debug] [MainThread]: Using redshift connection "debug"
+[0m16:08:21.370617 [debug] [MainThread]: On debug: select 1 as id
+[0m16:08:21.370806 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:08:21.373654 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m16:08:21.374260 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m16:10:13.115135 [error] [MainThread]: Encountered an error:
+
+[0m16:10:13.117357 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/main.py", line 406, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/debug.py", line 150, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/debug.py", line 471, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/debug.py", line 449, in attempt_connection
+    adapter.debug_query()
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/impl.py", line 186, in debug_query
+    self.execute("select 1 as id")
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/base/impl.py", line 380, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 346, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 372, in add_query
+    connection, cursor = super().add_query(
+                         ^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/sql/connections.py", line 92, in add_query
+    cursor = connection.handle.cursor()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 95, in handle
+    self._handle.resolve(self)
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/contracts/connection.py", line 119, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 327, in open
+    open_connection = cls.retry_connection(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/base/connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/adapters/redshift/connections.py", line 192, in connect
+    c = redshift_connector.connect(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/redshift_connector/__init__.py", line 376, in connect
+    return Connection(
+           ^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/redshift_connector/core.py", line 628, in __init__
+    self._usock.connect(hostport)
+KeyboardInterrupt
+
+[0m16:10:13.118261 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 111.87355, "process_user_time": 0.821275, "process_kernel_time": 0.13501, "process_mem_max_rss": "103868", "process_out_blocks": "40", "command_success": false, "process_in_blocks": "0"}
+[0m16:10:13.118615 [debug] [MainThread]: Command `dbt debug` failed at 16:10:13.118555 after 111.87 seconds
+[0m16:10:13.118829 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:10:13.119046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf8b4c1a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf8b50ae90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf8ee2f350>]}
+[0m16:10:13.119287 [debug] [MainThread]: Flushing usage events
+[0m16:10:16.971563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02e2d26e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02e2d1ec10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02e2cdc1d0>]}
+
+
+============================== 16:10:16.974497 | 7466798d-2bea-4226-b305-e5ef4ef06950 ==============================
+[0m16:10:16.974497 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:10:16.974852 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kate/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:10:16.980655 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:10:16.980899 [info ] [MainThread]: python version: 3.11.9
+[0m16:10:16.981118 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:10:16.981331 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:10:17.027139 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m16:10:17.027501 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m16:10:17.055229 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:10:17.055506 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:10:17.055723 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:10:17.055997 [info ] [MainThread]: adapter type: redshift
+[0m16:10:17.056194 [info ] [MainThread]: adapter version: 1.8.1
+[0m16:10:17.056391 [info ] [MainThread]: Configuration:
+[0m16:10:17.056578 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:10:17.056765 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:10:17.056949 [info ] [MainThread]: Required dependencies:
+[0m16:10:17.057158 [debug] [MainThread]: Executing "git --help"
+[0m16:10:17.059317 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:10:17.059913 [debug] [MainThread]: STDERR: "b''"
+[0m16:10:17.060234 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:10:17.060554 [info ] [MainThread]: Connection:
+[0m16:10:17.060870 [info ] [MainThread]:   host: dbtredshiftcluster-qjhz6fv2mdya.cghctbp7qxqt.us-east-1.redshift.amazonaws.com
+[0m16:10:17.061174 [info ] [MainThread]:   user: dbtadmin
+[0m16:10:17.061455 [info ] [MainThread]:   port: 5439
+[0m16:10:17.061664 [info ] [MainThread]:   database: dbtworkshop
+[0m16:10:17.061850 [info ] [MainThread]:   method: database
+[0m16:10:17.062031 [info ] [MainThread]:   cluster_id: None
+[0m16:10:17.062211 [info ] [MainThread]:   iam_profile: None
+[0m16:10:17.062390 [info ] [MainThread]:   schema: analytics
+[0m16:10:17.062568 [info ] [MainThread]:   sslmode: prefer
+[0m16:10:17.062746 [info ] [MainThread]:   region: None
+[0m16:10:17.062925 [info ] [MainThread]:   sslmode: prefer
+[0m16:10:17.063104 [info ] [MainThread]:   region: None
+[0m16:10:17.063284 [info ] [MainThread]:   iam_profile: None
+[0m16:10:17.063466 [info ] [MainThread]:   autocreate: False
+[0m16:10:17.063646 [info ] [MainThread]:   db_groups: []
+[0m16:10:17.063824 [info ] [MainThread]:   ra3_node: False
+[0m16:10:17.064016 [info ] [MainThread]:   connect_timeout: 10
+[0m16:10:17.064195 [info ] [MainThread]:   role: None
+[0m16:10:17.064376 [info ] [MainThread]:   retries: 1
+[0m16:10:17.064556 [info ] [MainThread]:   autocommit: True
+[0m16:10:17.064849 [info ] [MainThread]: Registered adapter: redshift=1.8.1
+[0m16:10:17.066085 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m16:10:17.069447 [debug] [MainThread]: Using redshift connection "debug"
+[0m16:10:17.069671 [debug] [MainThread]: On debug: select 1 as id
+[0m16:10:17.069866 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:10:17.072679 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m16:10:17.073290 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m16:10:27.219397 [debug] [MainThread]: Redshift adapter: Got a retryable error when attempting to open a redshift connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+('connection time out', TimeoutError('timed out'))
+[0m16:10:27.219978 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m16:10:37.234020 [debug] [MainThread]: Redshift adapter: Error running SQL: select 1 as id
+[0m16:10:37.234639 [debug] [MainThread]: Redshift adapter: Rolling back transaction.
+[0m16:10:37.235055 [debug] [MainThread]: On debug: No close available on handle
+[0m16:10:37.235456 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:10:37.235937 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:10:37.236323 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kate/projects/dbt-tutorial/dbt_project.yml> not found
+
+[0m16:10:37.236711 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('connection time out', TimeoutError('timed out'))
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:10:37.237704 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 20.294216, "process_user_time": 0.802808, "process_kernel_time": 0.143074, "process_mem_max_rss": "103676", "process_out_blocks": "40", "command_success": false, "process_in_blocks": "0"}
+[0m16:10:37.238332 [debug] [MainThread]: Command `dbt debug` failed at 16:10:37.238219 after 20.29 seconds
+[0m16:10:37.238740 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:10:37.239150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02e2d27310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02e2cddc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02e2d112d0>]}
+[0m16:10:37.239611 [debug] [MainThread]: Flushing usage events
+[0m16:29:02.587431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92a9383590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92a989a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92a93cbb10>]}
+
+
+============================== 16:29:02.590393 | 6bc222d5-5343-4207-9076-bf99009e960e ==============================
+[0m16:29:02.590393 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:29:02.590764 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kate/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:29:02.596378 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:29:02.596622 [info ] [MainThread]: python version: 3.11.9
+[0m16:29:02.596842 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:29:02.597045 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:29:02.625975 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:29:02.626266 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:29:02.626469 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:29:02.626742 [info ] [MainThread]: adapter type: postgres
+[0m16:29:02.626940 [info ] [MainThread]: adapter version: 1.8.2
+[0m16:29:02.627137 [info ] [MainThread]: Configuration:
+[0m16:29:02.627323 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:29:02.627518 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:29:02.627702 [info ] [MainThread]: Required dependencies:
+[0m16:29:02.627904 [debug] [MainThread]: Executing "git --help"
+[0m16:29:02.630784 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:29:02.631470 [debug] [MainThread]: STDERR: "b''"
+[0m16:29:02.631777 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:29:02.632094 [info ] [MainThread]: Connection:
+[0m16:29:02.632405 [info ] [MainThread]:   host: localhost
+[0m16:29:02.632686 [info ] [MainThread]:   port: 5432
+[0m16:29:02.632964 [info ] [MainThread]:   user: postgres
+[0m16:29:02.633259 [info ] [MainThread]:   database: mimiciv
+[0m16:29:02.633554 [info ] [MainThread]:   schema: dbt_kweber
+[0m16:29:02.633831 [info ] [MainThread]:   connect_timeout: 10
+[0m16:29:02.634107 [info ] [MainThread]:   role: None
+[0m16:29:02.634384 [info ] [MainThread]:   search_path: None
+[0m16:29:02.634570 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:29:02.634748 [info ] [MainThread]:   sslmode: None
+[0m16:29:02.634927 [info ] [MainThread]:   sslcert: None
+[0m16:29:02.635104 [info ] [MainThread]:   sslkey: None
+[0m16:29:02.635281 [info ] [MainThread]:   sslrootcert: None
+[0m16:29:02.635461 [info ] [MainThread]:   application_name: dbt
+[0m16:29:02.635641 [info ] [MainThread]:   retries: 1
+[0m16:29:02.635953 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:29:02.637163 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:29:02.654612 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:29:02.654856 [debug] [MainThread]: On debug: select 1 as id
+[0m16:29:02.655048 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:29:02.665237 [debug] [MainThread]: SQL status: SELECT 1 in 0.010 seconds
+[0m16:29:02.666069 [debug] [MainThread]: On debug: Close
+[0m16:29:02.666312 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:29:02.666543 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:29:02.666734 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kate/projects/dbt-tutorial/dbt_project.yml> not found
+
+[0m16:29:02.667283 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.10867665, "process_user_time": 0.756626, "process_kernel_time": 0.111502, "process_mem_max_rss": "101616", "process_in_blocks": "8", "process_out_blocks": "24", "command_success": false}
+[0m16:29:02.667648 [debug] [MainThread]: Command `dbt debug` failed at 16:29:02.667587 after 0.11 seconds
+[0m16:29:02.667882 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:29:02.668112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92a93b9190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92a9389c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92a8717a50>]}
+[0m16:29:02.668375 [debug] [MainThread]: Flushing usage events
+[0m16:32:48.834971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff581731210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff581731390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff58173fb10>]}
+
+
+============================== 16:32:48.838030 | 1cae7599-4dca-4d8c-96cb-db244fd9160e ==============================
+[0m16:32:48.838030 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:32:48.838447 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/kate/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:57.703020 [debug] [MainThread]: Starter project path: /home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/include/starter_project
+[0m16:32:57.705856 [info ] [MainThread]: 
+Your new dbt project "jsl_omop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:32:57.706186 [info ] [MainThread]: Setting up your profile.
+[0m16:34:01.190707 [error] [MainThread]: Encountered an error:
+
+[0m16:34:01.192957 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/dbt/task/init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/kate/projects/dbt-tutorial/.conda/lib/python3.11/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m16:34:01.194134 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 72.38768, "process_user_time": 0.776015, "process_kernel_time": 0.072425, "process_mem_max_rss": "94100", "process_out_blocks": "88", "command_success": false, "process_in_blocks": "0"}
+[0m16:34:01.194771 [debug] [MainThread]: Command `dbt init` failed at 16:34:01.194656 after 72.39 seconds
+[0m16:34:01.195228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5816fdc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff581767e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff585087690>]}
+[0m16:34:01.195698 [debug] [MainThread]: Flushing usage events
+[0m16:34:04.082108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1acb2ff290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1acb2ff110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1acb2ff150>]}
+
+
+============================== 16:34:04.085141 | 1f1f76dd-b623-4b04-a23c-a35894a7d72e ==============================
+[0m16:34:04.085141 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:34:04.085688 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kate/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m16:34:08.562465 [info ] [MainThread]: A project called jsl_omop already exists here.
+[0m16:34:08.563689 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 4.510189, "process_user_time": 0.716254, "process_kernel_time": 0.092549, "process_mem_max_rss": "89640", "process_out_blocks": "24", "process_in_blocks": "0"}
+[0m16:34:08.564345 [debug] [MainThread]: Command `dbt init` succeeded at 16:34:08.564221 after 4.51 seconds
+[0m16:34:08.564822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1acb2bdad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1acb688c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1acec536d0>]}
+[0m16:34:08.565330 [debug] [MainThread]: Flushing usage events
+[0m16:34:26.554191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff488b439d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff488b4e010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff488b4dad0>]}
+
+
+============================== 16:34:26.556092 | ec2e137a-d5f4-4c74-ba34-e079a245ff91 ==============================
+[0m16:34:26.556092 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:34:26.556453 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kate/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:34:26.561472 [info ] [MainThread]: dbt version: 1.8.6
+[0m16:34:26.561723 [info ] [MainThread]: python version: 3.11.9
+[0m16:34:26.561958 [info ] [MainThread]: python path: /home/kate/projects/dbt-tutorial/.conda/bin/python
+[0m16:34:26.562177 [info ] [MainThread]: os info: Linux-5.15.0-119-generic-x86_64-with-glibc2.35
+[0m16:34:26.590882 [info ] [MainThread]: Using profiles dir at /home/kate/.dbt
+[0m16:34:26.591168 [info ] [MainThread]: Using profiles.yml file at /home/kate/.dbt/profiles.yml
+[0m16:34:26.591393 [info ] [MainThread]: Using dbt_project.yml file at /home/kate/projects/dbt-tutorial/dbt_project.yml
+[0m16:34:26.591686 [info ] [MainThread]: adapter type: postgres
+[0m16:34:26.591894 [info ] [MainThread]: adapter version: 1.8.2
+[0m16:34:26.592113 [info ] [MainThread]: Configuration:
+[0m16:34:26.592316 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:34:26.592519 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:34:26.592718 [info ] [MainThread]: Required dependencies:
+[0m16:34:26.592936 [debug] [MainThread]: Executing "git --help"
+[0m16:34:26.594935 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:34:26.595563 [debug] [MainThread]: STDERR: "b''"
+[0m16:34:26.595865 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:34:26.596175 [info ] [MainThread]: Connection:
+[0m16:34:26.596480 [info ] [MainThread]:   host: localhost
+[0m16:34:26.596761 [info ] [MainThread]:   port: 5432
+[0m16:34:26.597040 [info ] [MainThread]:   user: postgres
+[0m16:34:26.597334 [info ] [MainThread]:   database: mimiciv
+[0m16:34:26.597613 [info ] [MainThread]:   schema: dbt_kweber
+[0m16:34:26.597890 [info ] [MainThread]:   connect_timeout: 10
+[0m16:34:26.598171 [info ] [MainThread]:   role: None
+[0m16:34:26.598381 [info ] [MainThread]:   search_path: None
+[0m16:34:26.598562 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:34:26.598743 [info ] [MainThread]:   sslmode: None
+[0m16:34:26.598923 [info ] [MainThread]:   sslcert: None
+[0m16:34:26.599103 [info ] [MainThread]:   sslkey: None
+[0m16:34:26.599287 [info ] [MainThread]:   sslrootcert: None
+[0m16:34:26.599468 [info ] [MainThread]:   application_name: dbt
+[0m16:34:26.599649 [info ] [MainThread]:   retries: 1
+[0m16:34:26.599941 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:34:26.601094 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:34:26.618256 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:34:26.618501 [debug] [MainThread]: On debug: select 1 as id
+[0m16:34:26.618694 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:34:26.628181 [debug] [MainThread]: SQL status: SELECT 1 in 0.009 seconds
+[0m16:34:26.629014 [debug] [MainThread]: On debug: Close
+[0m16:34:26.629269 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:34:26.629504 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:34:26.629694 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kate/projects/dbt-tutorial/dbt_project.yml> not found
+
+[0m16:34:26.630283 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.10452637, "process_user_time": 0.780636, "process_kernel_time": 0.084068, "process_mem_max_rss": "101624", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m16:34:26.630665 [debug] [MainThread]: Command `dbt debug` failed at 16:34:26.630604 after 0.10 seconds
+[0m16:34:26.630897 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:34:26.631131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff488b05d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff488aa6f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff488b6f510>]}
+[0m16:34:26.631395 [debug] [MainThread]: Flushing usage events
